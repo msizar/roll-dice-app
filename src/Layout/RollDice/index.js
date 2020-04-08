@@ -7,8 +7,6 @@ import './rollDice.css'
 
 class RollDice extends Component {
 
-    interval = 0;
-
     constructor(props) {
         super(props);
 
@@ -43,11 +41,11 @@ class RollDice extends Component {
         });
 
         return (
-            <div>
-                <div> {diceSection} </div>
+            <div  className='container'>
+                <div className='dice-wrapper'> {diceSection} </div>
 
                 <button 
-                    className='btn-roll' 
+                    className={`btn-roll ${rolling && 'rolling'}`} 
                     disabled={rolling? true : false }
                     onClick={this.onRollDice}
                 >

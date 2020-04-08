@@ -1,11 +1,24 @@
+.container {
+    margin: 50px;
+}
+
 .btn-roll {
     padding: 20px 50px;
     color: #ffffff;
     background: #000;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .btn-roll:hover{
     color: #ffffff;
-    background: orange;
+    background: green;
+}
+
+.dice-wrapper {
+    margin: 20px;
+}
+
+.rolling {
+    background-color: red;
 }
