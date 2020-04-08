@@ -39,7 +39,7 @@ class RollDice extends Component {
         const { diceList, rolling } = this.state; 
 
         const diceSection = diceList.map( die => {
-            return <Dice key={Math.random()} count={diceNumerics[die]} ></Dice>
+            return <Dice key={Math.random()} count={diceNumerics[die]} rolling={rolling} ></Dice>
         });
 
         return (
